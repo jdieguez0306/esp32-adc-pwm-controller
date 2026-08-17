@@ -28,7 +28,7 @@ def print_curr_time(timer):
 
 
 # Part 2: ADC pin and Reading the value
-potent = ADC(Pin(32))         # Initialize pin used for potnetiomete (ADC CH1)
+potent = ADC(Pin(32))         # Initialize pin used for potentiometer (ADC CH1)
 potent.atten(ADC.ATTN_11DB)   # Sets an 11DB attenuation to read 3.3V 
 potent.width(ADC.WIDTH_12BIT) # Sets a 12 bit resolution for ADC
 
@@ -36,7 +36,7 @@ potent.width(ADC.WIDTH_12BIT) # Sets a 12 bit resolution for ADC
 #Part 3 PWM LED initialization
 red_led = PWM(Pin(25))  # Initialize pin for LED
 red_led.freq(10)        # Initial frequency
-red_led.duty(512)       # Intitial Duty Cycle
+red_led.duty(512)       # Initial Duty Cycle
 
 ignore_switch_press = False
 mode = 0                # Initialize starting mode just in an idle state
